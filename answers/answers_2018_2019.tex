@@ -22,7 +22,6 @@
 \maketitle
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% 1 Patrick
 \begin{question}
 Explain the definition of an induced matrix norm. Explain the meaning of the 1, 2, $\infty$ matrix norms? What are Schatten norms?
 \end{question}
@@ -61,7 +60,6 @@ Explain the definition of an induced matrix norm. Explain the meaning of the 1, 
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% 2 Patrick
 \begin{question}
 What is the spectral decomposition theorem of a symmetric $n \times n$ matrix?
 \end{question}
@@ -79,7 +77,6 @@ The columns of $U$ constitute an orthonormal basis comprised of eigenvectors of 
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% 3 Moritz
 \begin{question}
 What are the linear and quadratic approximation theorems?
 \end{question}
@@ -110,7 +107,6 @@ Let $f: U \mapsto \mathbb{R}$ be a twice continuously differentiable function ov
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% 4 Moritz
 \begin{question}
 What is the fundamental theorem of calculus? Show how it can be applied
 to a multivariate function $f(x)$ and to its gradient $\nabla f(x)$.
@@ -169,7 +165,6 @@ Explanation:
 % further info: https://mathinsight.org/gradient_theorem_line_integrals
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% 5 exact same
 \begin{question}
 What is the definition of local and global minima. Give the first order necessary condition of optimality and prove it. What are stationary points? What are the second order necessary and sufficient conditions of optimality? What are the conditions under which a function has a global minimizer or maximizer?
 \end{question}
@@ -277,7 +272,6 @@ What is the definition of local and global minima. Give the first order necessar
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% 6 exact same
 \begin{question}
 Consider the following optimization problem:
 $min_x f(x) = \ldots$, s.t.\ldots
@@ -301,7 +295,6 @@ Amir Beck (Teach Center), page 26-36).
 \end{enumerate}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% 7 Alice
 \begin{question}
 Compute the gradient and the Hessian matrix of the quadratic function
 
@@ -336,8 +329,8 @@ We assume that A is symmetric. Since $\nabla^2 f(x) = A$, we can use also use th
 %    \item[ad 2.] Follows from the global optimality of stationary points for functions with positive semidefinite %Hessian. Hence, points $x^*$ satisfying $Ax^*=-b$ are globally optimal solutions.
 %    \item[ad 3.] Follows from the fact that $A$ is always invertible if $A \succ 0$. Hence from $Ax^*=-b$ it follows %that $x^*=-A^{-1}b$
 %\end{enumerate}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% 8 exact same
 \begin{question}
 What are linear and non-linear least-squares problems. Show the application of linear least squares to data fitting. Show how to compute the optimal solution.
 \end{question}
@@ -364,8 +357,7 @@ What are linear and non-linear least-squares problems. Show the application of l
         \end{align*}
 \end{itemize}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% 9 exact same
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{question}
 Give the definition of a descent direction. Draw a simple example explaining the properties of a descent direction. Prove that taking a small enough step along the descent direction decreases the objective function.
 \end{question}
@@ -410,7 +402,6 @@ Give the definition of a descent direction. Draw a simple example explaining the
     \end{equation*}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% 10 exact same
 \begin{question}
  Give the general form of a gradient method and show that 
   \begin{equation*} 
@@ -456,7 +447,6 @@ We have
 \end{itemize}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% 11 exact same
 \begin{question}
 Prove the formula for exact line search based on a descent direction $d$ for quadratic functions of the form
 \begin{equation*}
@@ -498,7 +488,6 @@ From the first order necessary condition of optimality $g'(t)=0$, which is also 
 \end{equation*}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% 12 exact same
 \begin{question}
 Explain the Armijo step size rule and draw a figure. Prove the sufficient decrease condition and show its relation to the Armijo step size condition.
 \end{question}
@@ -567,7 +556,6 @@ Explain the Armijo step size rule and draw a figure. Prove the sufficient decrea
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% 13 exact same
 \begin{question}
 What is the "zig-zag" effect? Prove that the differences of successive iterates are orthogonal to each other when using an exact line search.
 \end{question}
@@ -599,7 +587,6 @@ $$( x^{k+2} - x^{k+1})^T( x^{k+1} - x^{k}) = 0$$
 		$\square$
 	\end{flushright}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% 14 exact same
 \begin{question}
 What is the rate of convergence of the gradient method for quadratic functions when using exact line search. What is the condition number?
 \end{question}
@@ -668,7 +655,6 @@ $$ \kappa(A) = \frac{\lambda_{max}(A)}{\lambda_{min}(A)}.$$
  The higher the condition number of an optimization problem, the more difficult it is to solve.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% 15 Patrick
 \begin{question}
 What is a Lipschitz continuous gradient and show how it is related to the norm of the Hessian matrix? What is the Lipschitz constant of the gradient of a linear least squares problem of the form
 \begin{equation*}
@@ -721,7 +707,6 @@ The left hand side is exactly the definition of the operator norm and hence we o
     \norm{\T{A}A}_2 &\stackrel{!}{=} L
 \end{align*}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% 16 Patrick
 \begin{question}
 Prove the descent lemma for a differentiable function $f$ with Lipschitz-continuous gradient. Interpret the inequality of the descent lemma in terms of an upper bound to the function $f$. Use the descent lemma to also prove the sufficient decrease lemma.
 \end{question}
@@ -843,7 +828,6 @@ Let $f$ be a continuously differentiable function over $ \mathbb{R}^n$ with  L-L
 % \end{enumerate}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% 17 exact same
 \begin{question}
 Give the general form of non-linear least-squares problems. Show how the Gauss-Newton method is obtained from performing a first-order Taylor approximation. What is the Levenberg-Marquardt method?
 \end{question}
@@ -890,7 +874,6 @@ Give the general form of non-linear least-squares problems. Show how the Gauss-N
 \end{itemize}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% 18 exact same
 \begin{question}
 Explain the Kalman filter and show its relation to incremental Gauss-Newton methods. What are its applications?
 \end{question}
@@ -955,7 +938,6 @@ Explanation:
 Further steps are obtainted via induction.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% 19 exact same
 \begin{question}
 Show that the plain form of Newton's method can be derived from a second order Taylor approximation of the objective function. Show that Newton's method is invariant with respect to affine scalings.
 \end{question}
@@ -1012,7 +994,6 @@ Replacing $Sy^{(k)}$ with $x^{(k)}$ yields that the sequences $\{{x^{(k)}\}}_{{(
 \end{equation*}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% 20 exact same
 \begin{question}
 Give the theorem of locally quadratic convergence of the pure form of Newton’s method and prove it. What can you say about the global convergence of Newton’s method?
 \end{question}
@@ -1088,8 +1069,6 @@ holds for any k. In our induction step, we then obtain
 \end{aligned}\end{equation*}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
-% 21 exact same
-
 \begin{question}
 What is Q-conjugacy? Show how the Gram-Schmidt procedure can be
 used to generate a set of Q-conjugate directions from a set of linearly
@@ -1128,10 +1107,8 @@ independent vectors.
 		Now, given a set of linearly independent vectors $\{\xi^i\}^k_{i=0}$, we can generate pairwise $Q$-conjugate vectors $\{d^i\}^k_{i=0}$ via the\textbf{ Gram-Schmidt procedure}:
 		$$ d^0 = \xi^0$$
 		$$ d^{(i+1)} = \xi^{(i+1)} - \sum_{m = 0}^{i} proj_{d^m}^{Q}(\xi^{(i+1)}), \quad i = 0,...,k-1$$
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
-% 22 Moritz
 \begin{question}
  Write down the conjugate gradients (CG) method. What is its convergence rate and how can it be generalized to non-linear problems.
 
@@ -1204,7 +1181,6 @@ Nothing known about the convergence rate.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%23 exact same
 \begin{question}
 Explain the heavy-ball algorithm and show that it is obtained from a finite differences approximation of the heavy-ball with friction dynamical system. How is it related to the CG method?
 \end{question}
@@ -1258,7 +1234,6 @@ We now see that this is the iteration step of the heavy ball method with $\frac{
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%24 exact same
 \begin{question}
 Give the definition of stationary points for minimizing a differentiable function over a convex set. Give an example showing the necessary optimality condition for minimizing a differentiable function over a convex set. Why does it fail in case the constraint set is non-convex?
 \end{question}
@@ -1277,7 +1252,6 @@ Give the definition of stationary points for minimizing a differentiable functio
 \end{figure}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%25 exact same
 \begin{question}
   Explain the projection on a convex set? Write down the projection theorem. Compute the projection of a point $z \in \RR^n$ to the constraint set $C = \{x \in \RR^n:Ax=0\}$
 \end{question}
@@ -1306,8 +1280,6 @@ Give the definition of stationary points for minimizing a differentiable functio
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%26 exact same
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 \begin{question}
 Show that stationarity in optimization over a convex set can also be written in terms of the projection operator.
 \end{question}
@@ -1324,8 +1296,6 @@ $((\underbrace{x^* - s\nabla f (x^*)}_{z}) - x^* )^T (x - x^* ) \leq 0$ for all 
   \end{flushright}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%27 exact same
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 \begin{question}
 What is the gradient projection method. Give the algorithm and give choices for the step size selection. Draw an example illustrating the iterations of the gradient projection method.
 \end{question}
@@ -1357,8 +1327,6 @@ If $x^{(k)} - s^{(k)} \nabla f(x^{(k)}) \in X$, the projection is trivial and th
 \end{figure}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%28 exact same
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 \begin{question}
 What is the scaled gradient projection method? Show how to specialize your algorithm such that it becomes a projected Newton algorithm.
 \end{question}
@@ -1384,7 +1352,6 @@ Observe that if $f$ is a twice continuously differentiable function over $C$ and
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%29 Moritz
 \begin{question}
   Derive the affine scaling method for solving an equality constrained LP of the form 
   \begin{equation*}
@@ -1449,8 +1416,6 @@ Side note: This algorithm uses the inverse $(\kth{H})^{-1}$, but since it is a d
 \end{equation*}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% 30 Alice
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 \begin{question}
 Derive the dual affine scaling method for an inequality constrained LP of the form 
 \begin{equation*}
@@ -1491,7 +1456,6 @@ Solving for y yields the iterations of the dual affine scaling method
 where the step size $\kth{t}$ must again be chosen small enough such that $\kth[k+1]{s} = \kth{s} - A^T (y^{k+1} - \kth{y}) = \kth{s} - \kth{t} A^T (A \kth{\tilde{H}} A^T)^{-1}b > 0, $ which can be achieved with a similar procedure as described above.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% 31 exact same
 \begin{question}
 What is the Lagrange multiplier theorem for equality constrained optimization problems? Draw a simple example and explain why the gradients of the constraint functions need to be linearly independent.
 \end{question}
