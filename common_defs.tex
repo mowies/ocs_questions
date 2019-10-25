@@ -1,0 +1,69 @@
+% graphics
+\usepackage{graphicx}
+\usepackage{float}
+\graphicspath{{figures/}}
+
+\usepackage[font={small,sf}]{caption}
+
+% todo notes
+\usepackage{todonotes}
+% \let\oldtodo\todo
+% \renewcommand{\todo}[1]{\oldtodo[noline]{#1}}
+\usepackage{csquotes}
+% math stuff
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{commath}
+\newcommand{\RR}{\mathbb{R}}
+\newcommand{\NN}{\mathbb{N}}
+\newcommand{\ZZ}{\mathbb{Z}}
+\newcommand{\T}[1]{#1^{\mathrm{T}}}
+\newcommand{\Sqrt}[1]{#1^{\frac{1}{2}}}
+\newcommand{\kth}[2][k]{#2^{(#1)}}
+\newcommand{\Lip}[3]{\mathcal{F}_{#1}^{#2, #3}}
+\newcommand{\Strong}[4]{\mathcal{S}_{#1, #2}^{#3, #4}}
+\newcommand{\strong}[2]{\mathcal{S}_{#1}^{#2}}
+\newcommand{\Lipl}{\Lip{L}{1}{1}}
+\newcommand{\strongm}{\strong{\mu}{1}}
+\newcommand{\Strongml}{\Strong{L}{\mu}{1}{1}}
+\newcommand{\iprod}[2]{\left\langle #1, #2 \right\rangle}
+
+\DeclareMathOperator{\diag}{diag}
+\DeclareMathOperator*{\argmin}{arg min}
+\DeclareMathOperator{\Span}{span}
+\DeclareMathOperator{\proj}{proj}
+\DeclareMathOperator{\card}{card}
+\DeclareMathOperator{\tr}{tr}
+\DeclareMathOperator{\rank}{rank}
+
+\hyphenation{Lip-schitz}
+\allowdisplaybreaks
+
+% layout/sectioning
+\newcounter{summary}[section]
+\newcommand{\summary}[1]{%
+  \paragraph{\arabic{section}.\arabic{summary}\texorpdfstring{\enspace}{ } #1.}\refstepcounter{summary}}
+\newcommand{\optionalsummary}[1]{%
+  \paragraph{\arabic{section}.\arabic{summary}*\texorpdfstring{\enspace}{ } #1.}\refstepcounter{summary}}
+\renewcommand{\thesummary}{\thesection .\arabic{summary}}
+
+% todo: fix pdf bookmarks/make this a proper sectioning command
+% \pdfbookmark[3]{#1}{subsec:\thesummary}%
+% https://tex.stackexchange.com/questions/3881/formatting-a-paragraph-to-look-like-a-section
+
+% fix (= remove) space below theorem environment, since we abuse it for question formatting
+\newtheoremstyle{slplain}% name
+  {.5\baselineskip\@plus.2\baselineskip\@minus.2\baselineskip}% Space above
+  {0pt}% Space below
+  {\itshape}% Body font
+  {}%Indent amount (empty = no indent, \parindent = para indent)
+  {\bfseries}%  Thm head font
+  {.}%       Punctuation after thm head
+  { }%      Space after thm head: " " = normal interword space;
+        %       \newline = linebreak
+  {}%       Thm head spec
+\theoremstyle{slplain}
+\newtheorem{question}{Question}
+
+\usepackage{parskip}
