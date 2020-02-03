@@ -29,7 +29,7 @@ Explain the definition of an induced matrix norm. Explain the meaning of the 1, 
 \begin{enumerate}[(1)]
     \item Matrix norms on $ \mathbb{R}^{m \times n}$ are defined in analogy to vector norms. The norm used below is the $l_p$ norm:
     \begin{equation*}
-     \norm{x}_p = \biggl( \sum_{i=1}^n \norm{x_i}^p \biggr)^{1/p}
+     \norm{x}_p = \biggl( \sum_{i=1}^n \abs{x_i}^p \biggr)^{1/p}
     \end{equation*}
     \item Let $ \norm{\cdot}_a$ and $ \norm{\cdot}_b$ be vector norms on $\mathbb{R}^n$ and $\mathbb{R}^m$, respectively. Given a matrix $A\in\mathbb{R}^{m \times n}$, the induced matrix norm $\norm{A}_{a,b}$ is defined by:
     
@@ -39,7 +39,7 @@ Explain the definition of an induced matrix norm. Explain the meaning of the 1, 
     \item If $a=b$ we write $\norm{A}_a$ instead of $\norm{A}_{a,a}$ 
     \item If  $ \norm{\cdot}_a = \norm{\cdot}_b = \norm{\cdot}_1$, the induced norm of a matrix $A^{m \times n}$ is given by 
     \begin{equation*}
-    \norm{A}_1 = \max_{j=1,2,...,n} \sum_{i=1}^m \norm{A_{i,j}} 
+    \norm{A}_1 = \max_{j=1,2,...,n} \sum_{i=1}^m \abs{A_{i,j}} 
     \end{equation*}
     which is the largest absolute column sum norm.
     \item If  $ \norm{\cdot}_a = \norm{\cdot}_b = \norm{\cdot}_2$, we obtain the spectral (or operator) norm :
@@ -49,7 +49,7 @@ Explain the definition of an induced matrix norm. Explain the meaning of the 1, 
     where $ \sigma _{\max }(A)$ represents the largest singular value of matrix $A$
     \item If  $ \norm{\cdot}_a = \norm{\cdot}_b = \norm{\cdot}_{\infty}$, the induced norm of a matrix $A^{m \times n}$ is given by:
     \begin{equation*}
-    \norm{A}_{\infty} = \max_{i=1,2,...,m} \sum_{j=1}^n \norm{A_{i,j}} 
+    \norm{A}_{\infty} = \max_{i=1,2,...,m} \sum_{j=1}^n \abs{A_{i,j}} 
     \end{equation*}
     which is the largest absolute row sum norm.
     \item Schatten norms are based on $l_p$ norms of the singular values $\sigma_i(A), i = 1...min\{m,n\}$. For $p\geq 1 $ one has:
